@@ -18,8 +18,9 @@ namespace Parcial1.Controllers
 
         private double CalculateDrop()
         {
-   
-            return new Random().NextDouble();
+
+            double roundResult = new Random().NextDouble();
+            return Math.Round(roundResult, 2);
         }
 
         private int GenerateRandomNumber()
